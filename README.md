@@ -481,7 +481,7 @@ add_to_library_groups = Cpu0
 ### Create a build directory. Note we are only building the Cpu0, not all target present in llvm/lib/Target/.
 ```
 ~$ mkdir build && cd build
-~/build$  cmake ./location_to_llvm_src/ -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD="Cpu0"
+~/build$ cmake ./location_to_llvm_src/ -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD="Cpu0"
 ~/build$ make 
 ```
 #### Check the registered target.
