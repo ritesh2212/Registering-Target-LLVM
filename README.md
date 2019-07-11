@@ -477,3 +477,14 @@ parent = Cpu0
 required_libraries = Support
 add_to_library_groups = Cpu0
 ```
+## After following all the above step you have to build the target.
+### Create a build directory. Note we are only building the Cpu0, not all target present in llvm/lib/Target/.
+```
+~$ mkdir build && cd build
+~/build$  cmake ./location_to_llvm_src/ -DCMAKE_BUILD_TYPE=Release -DLLVM_TARGETS_TO_BUILD="Cpu0"
+~/build$ make 
+```
+#### Check the registered target.
+```
+~/build$ ./bin/llc --version
+```
