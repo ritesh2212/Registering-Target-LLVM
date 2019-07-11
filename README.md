@@ -487,4 +487,12 @@ add_to_library_groups = Cpu0
 #### Check the registered target.
 ```
 ~/build$ ./bin/llc --version
+LLVM (http://llvm.org/):
+  LLVM version 8.0.1
+  Optimized build.
+  Default target: x86_64-unknown-linux-gnu
+  Host CPU: broadwell
+
+  Registered Targets:
+    cpu0 - Cpu0
 ```
